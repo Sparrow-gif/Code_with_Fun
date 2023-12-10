@@ -1,0 +1,149 @@
+<!doctype HLML>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet"><title>   </title>
+ <style>
+    * {
+       margin:0px;
+       padding:0px;
+       Font-size:20px;
+       Box-sizing:border-box;
+       text-transform:capitalize;
+       font-family: 'Lato', sans-serif;
+       user-select:none;
+     }
+    body {       
+       display:flex;
+       justify-content:center;
+       align-items:center;    
+       background: linear-gradient(255deg,#63ae7d,#7c52e3,#cf1480);
+       background-size: 180% 180%;
+       animation: gradient-animation 5s ease infinite;
+  /* This is Background-image  update if you want*/
+    /* background-image: url("images.jpeg");
+      background-repeat:no-repeat;
+      background-position:inharit ;
+      margin: ;      
+      background-attachment: fixed;
+      background-size:cover; */   /*  Comment  */
+      
+     }
+    form{     
+        border: ;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;width:90%;
+        height:auto;
+        width:90%;
+        margin:0 auto;
+        background:white;       
+        padding:20px 10px;
+        border-radius:10px;
+      animation: anime 4s linear infinite;  
+       }
+    form > h2{
+        text-align:center;
+        color:  ;
+        Font-size:1.80rem;
+        animation: ani 2s linear infinite;
+      }
+   div {
+       background:  ;
+      }
+    label {
+         Font-size: ;
+         padding:0px;
+      }
+    input{
+        width:100%;
+        margin:5px auto;
+        padding:8px;
+        border-radius:10px;
+        border:2px solid #d6d6d2;
+        cursor:pointer;
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+  #btn {
+        background:orange;
+        color:white;
+        transition:0.3s;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+        margin:0 auto;
+        width:100%;
+        padding:8px;
+       }
+ #btn:active{
+        transform:scale(0.70) ;
+      }
+   p {
+      text-align:right;
+      margin:15px 5px;
+    }
+  p > a{
+      text-decoration:none;
+      cursor:pointer;
+      font-weight:800;
+      letter-spacing:2px;
+    }
+ input:focus {
+      background: #173459;
+     color:white;
+    }
+ 
+ @Keyframes anime {
+            0% { transform: translate(0,  0px); }
+           50% { transform: translate(0, -15px); }
+          100% { transform: translate(0, -0px); }                           
+       }
+ @Keyframes ani {
+             15% { color:red; }    
+             30% { color:green; }     
+             45% { color:orange; }    
+             60% { color:hotpink; }    
+             75% { color:dodgerblue; }    
+             90% { color:olive; }     
+       }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+            
+</style>
+</head>
+<body>
+    <form action="/action_page.php" method="post()">
+        <h2> register </h2>
+        
+            <label for ="Name"> Name </label> <br>
+            <input type="text" id="myname" placeholder=" " name="myname" required> <br>
+       
+            <label for ="Gmail"> gmail </label> <br>
+            <input type="gmail" id="gmail" placeholder=" " name="gmail" required><br>
+           
+            <label for ="password"> password </label> <br>
+            <input type="password" id="password" placeholder=" " name="password" required>
+               
+            <label for ="paytm"> paytm number </label> <br>
+            <input type="number" placeholder=" " id="paytm" name="paytm" maxlength="10"  required> <br> <br>
+           
+            <button id="btn" value="submit"> register </button> <br>        
+            
+            <p><a href="#"> login ? </a></p>
+
+    </form>
+
+  <script>
+     
+  </script>
+</body>
+</html>
